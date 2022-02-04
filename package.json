@@ -1,10 +1,11 @@
 {
-  "name": "socket-stream",
+  "name": "@dpxmaximus/socket-stream",
   "version": "0.1.0",
   "description": "A port of the socket.io-stream library (by @nkzawa [Naoyuki Kanezawa]) using Typescript for better type definitions and more improvements.",
   "main": "build/index.js",
   "scripts": {
-    "compile": "tsc"
+    "compile": "npx tsc",
+    "prepare": "npm run compile"
   },
   "keywords": [
     "stream",
@@ -25,5 +26,12 @@
       "name": "Durgesh Pandey",
       "email": "durgeshp1608@gmail.com"
     }
-  ]
+  ],
+  "files": [
+    "build/**/*"
+  ],
+  "homepage": "https://github.com/HeartBeat1608/socket-stream#readme",
+  "bugs": {
+    "url": "https://github.com/HeartBeat1608/socket-stream/issues"
+  }
 }
