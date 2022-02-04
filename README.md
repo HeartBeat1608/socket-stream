@@ -8,13 +8,13 @@ If you are not familiar with Stream API, be sure to check out [the docs](http://
 I also recommend checking out the awesome [Stream Handbook](https://github.com/substack/stream-handbook).
 
 For streaming between server and client, you will send stream instances first.
-To receive streams, you just wrap `socket` with `socket.io-stream`, then listen any events as usual.
+To receive streams, you just wrap `socket` with `socket-stream`, then listen any events as usual.
 
 Server:
 
 ```js
 var io = require('socket.io').listen(80);
-var ss = require('socket.io-stream');
+var ss = require('socket-stream');
 var path = require('path');
 
 io.of('/user').on('connection', function(socket) {
@@ -31,7 +31,7 @@ Client:
 
 ```js
 var io = require('socket.io-client');
-var ss = require('socket.io-stream');
+var ss = require('socket-stream');
 
 var socket = io.connect('http://example.com/user');
 var stream = ss.createStream();
