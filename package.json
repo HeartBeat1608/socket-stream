@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A port of the socket.io-stream library (by @nkzawa [Naoyuki Kanezawa]) using Typescript for better type definitions and more improvements.",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "compile": "npx tsc",
     "prepare": "npm run compile"
